@@ -1,0 +1,11 @@
+[Unit]
+Description=Watch and apply changes in the S.A.R.A. LSM config
+ConditionPathExists=/sys/kernel/security/sara
+Documentation=man:sara(7)
+Documentation=https://smeso.it/sara
+
+[Path]
+PathChanged=/etc/sara/wxprot.conf.d/
+
+[Install]
+WantedBy=multi-user.target

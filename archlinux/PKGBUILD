@@ -19,4 +19,6 @@ package() {
   cd "${srcdir}/${pkgname}"
   python setup.py install --root="${pkgdir}" --optimize=1
   install -Dm644 debian/sara.service "${pkgdir}/usr/lib/systemd/system/sara.service"
+  install -Dm644 debian/sara-watch.path "${pkgdir}/usr/lib/systemd/system/sara-watch.path"
+  install -Dm644 debian/sara-watch.service "${pkgdir}/usr/lib/systemd/system/sara-watch.service"
 }

@@ -1,0 +1,8 @@
+[Unit]
+Description=Watch and apply changes in the S.A.R.A. LSM config
+Documentation=man:sara(7)
+Documentation=https://smeso.it/sara
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/saractl load
